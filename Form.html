@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <header>
+        <h1>Application  form </h1>
+        </header>
+        <style> 
+        h1{
+            text-align: center;
+            
+            
+        }
+        #form{
+            height: 500px;
+            border-width: 200px;
+        
+        }
+        #frm{
+            height: 100;
+            width: 100%;
+
+        }
+        header{
+            background-color:rgb(86, 86, 229) ;
+            width: 100%;
+            height: 50px;
+        }
+        #form{
+            text-align: center;
+            width: 100%;
+            height: 500px;
+
+        }
+        </style>
+</head>
+<body>
+  <form  action="action.php" method="post">
+    <div id="form">
+        <br>
+        <fieldset>
+        <legend>
+            details
+        </legend>
+        <label for="file">Resume</label>
+        <input type="file" name="Resume" id="file">
+        <br>
+        <br>
+    <label for="Name">FirstName</label>
+    <input type="text" name="Name:" id="name" required>
+    <br>
+    <br>
+    <label for="no"> Lastname</label>
+    <input type="text" name="Age:" id="no" required>
+    <br>
+    <br>
+    
+    
+    <label for="phone"> phone number</label>
+    <input type="text" name="pHone number" id="phone" max="10"  min="10">
+    <br>
+    <br>
+    <label for="email">Email-id</label>
+    <input type="email" name="email" id="phone" reguired>   
+<br> 
+<br> 
+<label for="DOB">DOB</label>
+<input type="datetime-local" id="DOB">
+<br>
+<p>gender</p>
+<label for="gender">male</label>
+<input type="radio" name="mal" id="gender">
+<br>
+<br>
+<label for="gender"> female</label>
+<input type="radio" name="" id="gender">
+<br>
+<br>
+
+
+<button  href="action.php">Submit</button>
+</fieldset>
+
+
+</div>
+
+  </form>  
+</body>
+</html>
